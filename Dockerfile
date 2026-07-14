@@ -1,3 +1,2 @@
 FROM tomcat:9
-
-COPY app.war /usr/local/tomcat/webapps/
+COPY target/helloworld.war /usr/local/tomcat/webapps/app.war
