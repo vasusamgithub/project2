@@ -1,2 +1,5 @@
 FROM tomcat:9
-COPY target/helloworld.jar /usr/local/tomcat/webapps/app.jar
+
+EXPOSE 8080
+
+CMD ["catalina.sh", "run"]
