@@ -1,0 +1,12 @@
+replicaCount: 2
+
+image:
+  repository: vasu6303935331/project1
+  tag: "25"
+
+containerPort: 8080
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 8080
