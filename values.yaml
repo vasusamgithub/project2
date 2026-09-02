@@ -1,6 +1,6 @@
 replicaCount: 2
 
-image:
+image: vasu6303935331/project1:27
   repository: vasu6303935331/project1
   tag: "25"
 
