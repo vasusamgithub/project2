@@ -1,8 +1,8 @@
 replicaCount: 2
 
-image: vasu6303935331/project1:28
+image:
   repository: vasu6303935331/project1
-  tag: 29
+  tag: "29"
 
 containerPort: 8080
 
