@@ -68,6 +68,15 @@ pipeline {
             }
         }
 
+        // 4. Quality Gate
+        stage('Quality Gate') {
+            steps {
+                timeout(time: 4, unit: 'MINUTES') {
+                    waitForQualityGate abortPipeline: true
+                }
+            }
+        }
+
         // 5. Docker Image Creation
         stage('Docker Image Creation') {
             steps {
